@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="391.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.wither.view.AuthorDetailsController">
+   <children>
+      <ComboBox fx:id="cb_auteurs" layoutX="225.0" layoutY="59.0" prefHeight="25.0" prefWidth="209.0" />
+      <Label layoutX="58.0" layoutY="63.0" text="Selectionner un(e) Auteur(e) :" />
+      <Button fx:id="btn_aff" layoutX="459.0" layoutY="59.0" mnemonicParsing="false" onAction="#showAuthor" text="Afficher" />
+      <Label fx:id="lbl_nom_fixe" layoutX="122.0" layoutY="144.0" text="Nom :" />
+      <Label fx:id="lbl_nom_var" layoutX="232.0" layoutY="144.0" text="dummy_pre dummy_nom" />
+      <Label fx:id="lbl_dates_fixe" layoutX="125.0" layoutY="172.0" text="Dates :" />
+      <Label fx:id="lbl_date_naissance" layoutX="232.0" layoutY="172.0" text="00/00/0000" />
+      <Label fx:id="lbl_date_mort" layoutX="300.0" layoutY="172.0" text="Toujours en vie" />
+      <Hyperlink fx:id="hyper_link" layoutX="247.0" layoutY="207.0" onAction="#linkCliked" text="en savoir plus" />
+      <Label layoutX="79.0" layoutY="14.0" text="Afficher les détails d'un(e) auteur(e)" underline="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_back" layoutX="487.0" layoutY="361.0" mnemonicParsing="false" onAction="#goBackToMenu" text="retour au menu" />
+   </children>
+</AnchorPane>

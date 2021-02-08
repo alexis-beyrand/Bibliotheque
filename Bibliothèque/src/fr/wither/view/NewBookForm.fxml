@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.wither.view.NewBookFormController">
+   <children>
+      <ComboBox id="cb_auteurs" fx:id="cb_auteurs" layoutX="332.0" layoutY="201.0" prefHeight="25.0" prefWidth="311.0" />
+      <Label layoutX="332.0" layoutY="174.0" text="Auteur(e)s :" />
+      <Button fx:id="ok_button" layoutX="460.0" layoutY="371.0" mnemonicParsing="false" onAction="#registerBook" text="Ajouter" />
+      <Label fx:id="lbl_err_auteur" layoutX="398.0" layoutY="226.0" text="Vous devez choisir un(e) auteur(e)" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="section_selector" layoutX="332.0" layoutY="275.0" prefHeight="25.0" prefWidth="95.0" />
+      <Label layoutX="332.0" layoutY="258.0" text="Numéro d'étagère :" />
+      <TextField fx:id="txf_titre" layoutX="332.0" layoutY="123.0" prefHeight="25.0" prefWidth="311.0" />
+      <Label layoutX="332.0" layoutY="97.0" text="Titre :" />
+      <Label layoutX="399.0" layoutY="37.0" text="Ajouter un livre :" underline="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="225.0" fitWidth="243.0" layoutX="47.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ressources/book-solid.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbl_err_titre" layoutX="420.0" layoutY="157.0" text="Vous devez définir un titre" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_err_etagere" layoutX="290.0" layoutY="307.0" text="Vous devez donner une étagère" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
